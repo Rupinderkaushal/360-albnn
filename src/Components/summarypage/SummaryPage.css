@@ -1,0 +1,147 @@
+.summary_page_wrapper{
+  background: #F5F5F5;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.main_wrapper{
+  background-color: #F5F5F5;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.sidebar_main_div{
+  width: 100%!important;
+}
+.summary_homepage_div{
+  width:85%;
+  background: #F5F5F5;
+}
+.summary_sidebar_div{
+    width:15%;
+    height:85vh;
+}
+.summary_link_wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width:20%;
+  padding-left: 10px;
+}
+.summary_header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #F5F5F5;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.link_header{
+  width:75%;
+  text-align: left;
+}
+.link_icon{
+  width:15%;
+  background-color: #FFFFFF;
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.budget_div_wrapper{
+  width:98%;
+  float: right;
+  padding: 10px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height:150vh;
+}
+.total_budget_div{
+width:49%;
+}
+.cross_charged_div{
+ width:50%;
+}
+.budget_header{
+  display: flex;
+  width:98%;
+  margin: 5px auto;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.budget_header h5{
+  font-size: 14px;
+  color:#000000;
+  font-weight: bolder;
+}
+.budget_header p{
+  color: rgb(30, 30, 31);
+  font-size: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 2px;
+}
+.cross_charged_header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.cross_charged_header h5{
+  font-size: 14px;
+  color:#000000;
+  font-weight: bolder;
+}
+.value_main_div{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.value_main_div h3{
+  font-size: 15px;
+  color: #000000;
+  width:fit-content;
+}
+.value_main_div text{
+  font-size: 12px;
+  color: grey;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.cross_value_div{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width:50%;height: 20vh;
+}
+.loading_div{
+  width:50%;
+
+}
+.cross_range_wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+.budget_summary_table{
+  background-color: #FFFFFF;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+}
+.table_div{
+  width:95%;
+  height:200px;
+  overflow: scroll;
+}
+.ant-table-thead > tr > th{
+  font-weight: bolder !important;
+  font-size: 10px;
+}

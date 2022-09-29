@@ -1,0 +1,66 @@
+.people_data_wrapper {
+    width: 100%;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+}
+
+.people_data_sidebar {
+    width: 15%;
+}
+.sidebar_main_div{
+    width: 15%;
+  }
+
+.people_data_header {
+        background-color: #F5F5F5;
+        width:85%;
+ 
+}
+
+.header_nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width:23%;
+
+}
+
+.header_nav p {
+    background: #FFFFFF;
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 0px;
+}
+
+.header_nav img {
+    width: 20px;
+    height: 20px;
+    display: block;
+
+}
+.header_wrapper{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.ant-table-thead >tr >th{
+    background: gold !important;
+}
+.table_div{
+    width: 90%;
+    background-color: white;
+}
+.table_wrapper{
+    background-color: #FFFFFF;
+    width:98%;
+    margin: 20px auto;
+    
+}
+.table_wrapper h1{
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px;
+}

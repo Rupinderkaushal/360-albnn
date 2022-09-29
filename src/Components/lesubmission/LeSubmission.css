@@ -1,0 +1,26 @@
+.le_submission_wrapper{
+    background: #F5F5F5;
+    display: flex;
+    justify-content: space-between;
+}
+.sidebar_main_div{
+    width: 15%;
+}
+.sidebar_wrapperr{
+    width: 15%;
+}
+
+.wrapper_header h2{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px;
+}
+.wrapper_table {
+    display: flex;
+    justify-content: end;
+}
+.table_content{
+    width: 95%;
+    height: 300px;
+    overflow: scroll;
+}

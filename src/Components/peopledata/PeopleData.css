@@ -1,0 +1,60 @@
+.non-people_data_wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.non-people-sidebar{
+    width:15%;
+}
+.non-people-graph-div{
+    width:85%;
+    background: #F5F5F5;
+}
+.header_wrapper{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #F5F5F5;
+}
+.header_nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width:15%;
+}
+.sidebar_main_div{
+    width: 100%!important;
+  }
+.pid_analysis{
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 10px;
+    padding: 15px;
+}.pid_analysis h4{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.semicircle{
+    width: 30%;
+    height: 30%;
+}
+.raw_data{
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+}.raw_data h3{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+}
+.row_table{
+    width: 95%;
+    padding: 10px;
+}
