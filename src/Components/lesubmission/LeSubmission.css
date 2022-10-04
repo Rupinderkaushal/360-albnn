@@ -24,3 +24,37 @@
     height: 300px;
     overflow: scroll;
 }
+.main_table{
+    margin-top:50px;
+    width:85%;
+}
+
+@media (max-width:519px){
+    .sidebar_wrapperr{
+        width: 30%;
+    }
+    .table_wrapper  {
+        width: 98%!important;
+        height: 300px;
+    }
+    .main_table{
+        margin-top:0px;
+        width: 70% !important;;
+    }
+    .le_submission_wrapper{
+        overflow: hidden;
+    }
+
+    
+
+}
+
+@media (min-width:520px) and (max-width:849px){
+    .sidebar_wrapperr{
+        width: 25%;
+    }
+    .main_table{
+        margin-top:0px;
+        width: 75% !important;;
+    }
+}

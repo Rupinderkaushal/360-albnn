@@ -143,6 +143,7 @@
         display: none;
     }
     .navlink_mobile a{
+        text-align: center;
         padding: 10px;
     }
     .navlink_mobile{
@@ -151,7 +152,7 @@
     background: linear-gradient(90deg, rgb(227, 175, 50) 0%, rgb(244, 224, 15) 100%);
     }
 }
-@media (min-width:519px) and (max-width:864px){
+@media (min-width:520px) and (max-width:864px){
     .main_header_wrapper{
         display: flex;
         align-items: center;
@@ -171,17 +172,21 @@
     .navbar_ham{
         display: block;
     }
-    .navlink_mobile{
-        width: 100%;
-        margin: 0px;
-        background: linear-gradient(90deg, rgb(227, 175, 50) 0%, rgb(244, 224, 15) 100%);
-        }
-        .navlink_mobile a{
-            padding: 15px;
-        }
+    
         .active{
             padding: 0px;
             border: none;
+        }
+        .navlink_mobile a{
+            text-align: center;
+            padding: 10px;
+        }
+        .navlink_mobile{
+            width: 100%;
+            margin: 0px;
+            display: flex;
+            flex-direction: column;
+        background: linear-gradient(90deg, rgb(227, 175, 50) 0%, rgb(244, 224, 15) 100%);
         }
     
 }

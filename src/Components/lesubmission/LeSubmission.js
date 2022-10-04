@@ -152,12 +152,16 @@ const LeSubmission = () => {
       <div className='sidebar_wrapperr'>
         <Sidebar/>
       </div>
-      <div style={{marginTop:"50px",width:"85%"}}>
+      <div className='main_table' style={{marginTop:"50px",width:"85%"}}>
       <div  className='table_wrapper'>
         <div className='wrapper_header'><h2>PEOPLE DATA</h2></div>
         <div className='wrapper_table'>
           <div className='table_content'>
-          <Table dataSource={dataSource} columns={columns} />
+          <Table 
+           dataSource={dataSource}
+            columns={columns}
+            scroll={{y:100,x:1500}}
+            />
           </div>
         </div>
       </div>
@@ -165,7 +169,11 @@ const LeSubmission = () => {
         <div className='wrapper_header'><h2> NON PEOPLE</h2></div>
         <div className='wrapper_table'>
           <div className='table_content'>
-          <Table dataSource={dataSource} columns={columns} />
+          <Table 
+          dataSource={dataSource}
+           columns={columns}
+           scroll={{y:100,x:1500}}
+           />
           </div>
         </div>
       </div>

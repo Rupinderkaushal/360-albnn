@@ -23,6 +23,40 @@ const dataSource = [
     '2022 Use case':54,
 
   },
+  {
+    key: '2',
+    "Plant": 'Plant',
+    "PurchasingDocument": 32,
+    "PO+Item": '10 Downing Street',
+    "Document Date":23,
+    "Name":"name",
+    "Delivery Date":23,
+    "Order Quantity":5,
+    "Order":2,
+    "Net PO value":34,
+    "Inv value":21,
+    'Email Id':"xyz@xyz.com",
+    '2022 Leader':"Ramesh",
+    '2022 Use case':54,
+
+  },
+  {
+    key: '3',
+    "Plant": 'Plant',
+    "PurchasingDocument": 32,
+    "PO+Item": '10 Downing Street',
+    "Document Date":23,
+    "Name":"name",
+    "Delivery Date":23,
+    "Order Quantity":5,
+    "Order":2,
+    "Net PO value":34,
+    "Inv value":21,
+    'Email Id':"xyz@xyz.com",
+    '2022 Leader':"Ramesh",
+    '2022 Use case':54,
+
+  },
 ];
 const columns = [
   {
@@ -116,21 +150,33 @@ const NonPeopleData = () => {
           <h1>VENDOR DETAILS</h1>
           <div style={{display:"flex",justifyContent:"flex-end",}}>
         <div className='table_div'>
-          <Table dataSource={dataSource} columns={columns}/>
+          <Table
+          dataSource={dataSource}
+           columns={columns}
+           scroll={{x:1500,y:100}}
+           />
         </div></div>
         </div>
         <div className='table_wrapper'>
           <h1>TRAVEL DETAILS</h1>
           <div style={{display:"flex",justifyContent:"flex-end",}}>
         <div className='table_div'>
-          <Table dataSource={dataSource} columns={columns}/>
+          <Table 
+          dataSource={dataSource}
+           columns={columns}
+           scroll={{x:1500,y:100}}
+           />
         </div></div>
         </div>
         <div className='table_wrapper'>
           <h1>AZURE TECHNOLOGY DETAILS</h1>
           <div style={{display:"flex",justifyContent:"flex-end",}}>
         <div className='table_div'>
-          <Table  dataSource={dataSource} columns={columns}/>
+          <Table  
+          dataSource={dataSource} 
+          columns={columns}
+          scroll={{x:1500,y:100}}
+          />
         </div></div>
         </div>
        

@@ -64,3 +64,22 @@
     font-weight: bold;
     padding: 10px;
 }
+
+@media (max-width:519px){
+    .people_data_sidebar{
+        width:30%;
+    }
+    .people_data_header{
+        width: 70%;
+    }
+    
+}
+
+@media (min-width:520px) and (max-width:849px){
+    .people_data_sidebar{
+        width:25%;
+    }
+    .people_data_header{
+        width: 75%;
+    }
+}

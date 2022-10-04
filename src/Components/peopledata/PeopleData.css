@@ -58,3 +58,32 @@
     width: 95%;
     padding: 10px;
 }
+@media (max-width:519px){
+    
+    .header_nav {
+     width: 25%;
+    }
+    .semicircle{
+        width: 70%;
+    }
+    .non-people-graph-div{
+        width: 70%;
+    }
+    .non-people-sidebar{
+        width: 30%;
+    }
+    .checkbox_wrapper {
+      width: 110px;
+    }
+}
+@media (min-width:520px) and (max-width:849px){
+    .non-people-sidebar{
+        width: 25%;
+    }
+    .non-people-graph-div{
+        width: 75%;
+    }
+    .semicircle{
+        width: 50%;
+    }
+}

@@ -79,6 +79,34 @@
     width:110px;
  }
 
+ @media (max-width:519px){
+  .sidebar_header {
+    width:100%;
+  }
+  .checkbox_wrapper {
+  width: 100%;
+  }
+  .checkbox_wrapper input{
+    margin-left: 5px;
+  }
+  #all{
+    margin-left: 5px;
+  }
+ }
+ @media (min-width:520px)and (max-width:845px){
+  .summary_sidebar_div {
+  width: 30%!important;
+  }
+  .filter_div {
+  width:100%;
+  }
+  .checkbox_wrapper {
+  width: 100%;
+  }
+  #all{
+    margin-left: 5px!important;
+  }
+ }
 
 
 

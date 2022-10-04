@@ -10,6 +10,9 @@ import SemiCircleChart from '../semicirclechart/SemiCircleChart';
 import Table from '../table/index';
 import BarGraph from '../charts/BarGraph';
 import BarNewGraph from '../charts/BarNewGraph';
+import { GaugeComp } from '../gauge/Gauge';
+import { BidirectionalBar, DemoBidirectionalBar } from '../bidirectionalbar/BidirectionalBar';
+import { DemoPie } from '../donut/Donut';
 
 const linkData=[
   {
@@ -86,7 +89,7 @@ const SummaryPage = () => {
                 <div className='budget_header'>
                   <h5>TOTAL BUDGET</h5>
                   <p>SPLIT BY CATEGORY</p>
-                  <BarGraph/>
+                  <BarGraph id='budget_graph' />
                 </div>
                </div>
                <div className='cross_charged_div'>
@@ -95,7 +98,7 @@ const SummaryPage = () => {
                 </div>
                 <div className='cross_range_wrapper'>
                   <div className='loading_div'>
-                    <BarNewGraph/>  
+                    <GaugeComp/>
                   </div>
                   <div className='cross_value_div'>
                     {rangeData.map((val,index)=>{
@@ -108,6 +111,36 @@ const SummaryPage = () => {
                   </div>
                 </div>
                </div>
+            </div>
+            <div className='surplus'>
+              <h1>SURPLUS/DEFICIT</h1>
+              <BarGraph />
+            </div>
+            <div className='overall_summary'>
+              <div className='overall'>
+                <h2>OVERALL SUMMARY</h2>
+              <BarGraph/>
+              </div>
+              <div className='cross_charge'>
+                <h2>Cross Charge Confirmation Status</h2>
+              <BidirectionalBar/>
+              </div>
+            </div>
+            <div className='category_analysis'>
+             <div className='cate_main'>
+             <h2>CATEGORY ANALYSIS</h2>
+              <p>ACTUALS BY CATEGORY</p>
+              <DemoPie val='96' value='4' hddr='7.63k'/>
+             </div>
+             <div className='pid'>
+              <p>PID COUNT</p>
+              <div className='input_wrapper'>
+              <select>
+                <option>2022 Use Case</option>
+              </select>
+              <h5>Total</h5>
+              </div>
+             </div>
             </div>
         </div>
     </div>

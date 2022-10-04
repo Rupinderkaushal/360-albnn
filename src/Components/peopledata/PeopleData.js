@@ -6,7 +6,7 @@ import SemiCircleChart from '../semicirclechart/SemiCircleChart';
 import { Table } from 'antd';
 
 
-const headerData=['TOTAL','FILLED','OPEN'];
+const headerData = ['TOTAL', 'FILLED', 'OPEN'];
 const PeopleData = () => {
 
   const dataSource = [
@@ -15,68 +15,68 @@ const PeopleData = () => {
       "Plant": 'Plant',
       "PurchasingDocument": 32,
       "PO+Item": '10 Downing Street',
-      "Document Date":23,
-      "Name":"name",
-      "Delivery Date":23,
-      "Order Quantity":5,
-      "Order":2,
-      "Net PO value":34,
-      "Inv value":21,
-      'Email Id':"xyz@xyz.com",
-      '2022 Leader':"Ramesh",
-      '2022 Use case':54,
-  
+      "Document Date": 23,
+      "Name": "name",
+      "Delivery Date": 23,
+      "Order Quantity": 5,
+      "Order": 2,
+      "Net PO value": 34,
+      "Inv value": 21,
+      'Email Id': "xyz@xyz.com",
+      '2022 Leader': "Ramesh",
+      '2022 Use case': 54,
+
     },
     {
       key: '2',
       "Plant": 'Plant',
       "PurchasingDocument": 32,
       "PO+Item": '10 Downing Street',
-      "Document Date":23,
-      "Name":"name",
-      "Delivery Date":23,
-      "Order Quantity":5,
-      "Order":2,
-      "Net PO value":34,
-      "Inv value":21,
-      'Email Id':"xyz@xyz.com",
-      '2022 Leader':"Ramesh",
-      '2022 Use case':54,
-  
+      "Document Date": 23,
+      "Name": "name",
+      "Delivery Date": 23,
+      "Order Quantity": 5,
+      "Order": 2,
+      "Net PO value": 34,
+      "Inv value": 21,
+      'Email Id': "xyz@xyz.com",
+      '2022 Leader': "Ramesh",
+      '2022 Use case': 54,
+
     },
     {
       key: '3',
       "Plant": 'Plant',
       "PurchasingDocument": 32,
       "PO+Item": '10 Downing Street',
-      "Document Date":23,
-      "Name":"name",
-      "Delivery Date":23,
-      "Order Quantity":5,
-      "Order":2,
-      "Net PO value":34,
-      "Inv value":21,
-      'Email Id':"xyz@xyz.com",
-      '2022 Leader':"Ramesh",
-      '2022 Use case':54,
-  
+      "Document Date": 23,
+      "Name": "name",
+      "Delivery Date": 23,
+      "Order Quantity": 5,
+      "Order": 2,
+      "Net PO value": 34,
+      "Inv value": 21,
+      'Email Id': "xyz@xyz.com",
+      '2022 Leader': "Ramesh",
+      '2022 Use case': 54,
+
     },
     {
       key: '4',
       "Plant": 'Plant',
       "PurchasingDocument": 32,
       "PO+Item": '10 Downing Street',
-      "Document Date":23,
-      "Name":"name",
-      "Delivery Date":23,
-      "Order Quantity":5,
-      "Order":2,
-      "Net PO value":34,
-      "Inv value":21,
-      'Email Id':"xyz@xyz.com",
-      '2022 Leader':"Ramesh",
-      '2022 Use case':54,
-  
+      "Document Date": 23,
+      "Name": "name",
+      "Delivery Date": 23,
+      "Order Quantity": 5,
+      "Order": 2,
+      "Net PO value": 34,
+      "Inv value": 21,
+      'Email Id': "xyz@xyz.com",
+      '2022 Leader': "Ramesh",
+      '2022 Use case': 54,
+
     },
   ];
   const columns = [
@@ -99,7 +99,7 @@ const PeopleData = () => {
       dataIndex: 'PO+Item',
       key: 'PO+Item',
     },
-  
+
     {
       title: 'Document Date',
       dataIndex: 'Document Date',
@@ -154,27 +154,30 @@ const PeopleData = () => {
   return (
     <div className='non-people_data_wrapper'>
       <div className='non-people-sidebar'>
-        <Sidebar/>
+        <Sidebar />
       </div>
       <div className='non-people-graph-div'>
-      <div className='header_wrapper'>
-          {headerData.map((val,index)=>{
+        <div className='header_wrapper'>
+          {headerData.map((val, index) => {
             return <div key={index} className='header_nav'>
-            <img src={Profile} />
-            <p>{val}</p>
-          </div>
+              <img src={Profile} />
+              <p>{val}</p>
+            </div>
           })}
-        
+
         </div>
         <div className='pid_analysis'>
           <h4>PID ANALYSIS</h4>
           <p>PID COUNT</p>
-          <div className='semicircle'><SemiCircleChart/></div>
+          <div className='semicircle'><SemiCircleChart /></div>
         </div>
         <div className='raw_data'>
           <h3>RAW DATA</h3>
           <div className='row_table'>
-          <Table dataSource={dataSource} columns={columns}/>
+            <Table  dataSource={dataSource} columns={columns}
+               scroll={{ y: 100, x: 1500 }}
+              
+            />
           </div>
         </div>
       </div>
